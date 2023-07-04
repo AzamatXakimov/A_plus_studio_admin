@@ -56,6 +56,8 @@
     align-items: center;
   }
   &__notification-btn {
+    position: relative;
+    display: inline-block;
     width: 48px;
     height: 48px;
     display: flex;
@@ -73,6 +75,20 @@
     }
     &:active {
       box-shadow: none;
+    }
+  }
+  &__notification-sign {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    display: none;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: #f23985;
+
+    &.header__notification-sign--active {
+      display: inline-block;
     }
   }
   &__name {

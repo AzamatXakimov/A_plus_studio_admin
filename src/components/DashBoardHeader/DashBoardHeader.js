@@ -32,7 +32,10 @@ export const DashBoardHeader = () => {
           </div>
           <div className="header__box3">
             <button className="header__notification-btn">
-              {/* <IoNotificationsOutline /> */}🔔
+              <IoNotificationsOutline />
+              <span className="header__notification-sign header__notification-sign--active">
+
+              </span>
             </button>
             <p className="header__name">{token.token}</p>
             <button className="header__user-btn">
